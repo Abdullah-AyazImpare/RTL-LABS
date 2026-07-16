@@ -1,57 +1,51 @@
 xrun(64): 25.09-s008: (c) Copyright 1995-2026 Cadence Design Systems, Inc.
-TOOL:	xrun(64)	25.09-s008: Started on Jul 16, 2026 at 07:27:06 UTC
+TOOL:	xrun(64)	25.09-s008: Started on Jul 16, 2026 at 07:45:20 UTC
 xrun
 	-f file.f
 		+incdir+design
 		design/lab1-1.v
+		design/lab1-3.v
 		+incdir+tb
 		tb/lab1-1tb.sv
-file: design/lab1-1.v
-	module worklib.full_adder:v
-		errors: 0, warnings: 0
-file: tb/lab1-1tb.sv
-	module worklib.tb_full_adder:sv
-		errors: 0, warnings: 0
+		tb/lab1-3tb.sv
+	-top mux_2x1_tb
+Recompiling... reason: file './design/lab1-1.v' is newer than expected.
+	expected: Thu Jul 16 07:23:35 2026
+	actual:   Thu Jul 16 07:29:35 2026
+file: tb/lab1-3tb.sv
 xmvlog: *W,SPDUSD: Include directory design given but not used.
 xmvlog: *W,SPDUSD: Include directory tb given but not used.
 	Total errors/warnings found outside modules and primitives:
 		errors: 0, warnings: 2
-		Caching library 'worklib' ....... Done
 	Elaborating the design hierarchy:
+		Caching library 'worklib' ....... Done
 	Top level design units:
-		worklib.tb_full_adder:sv (module)
+		worklib.mux_2x1_tb:sv (module)
 	Building instance overlay tables: .................... Done
 	Generating native compiled code:
-		worklib.full_adder:v <0x65e89f35>
-			streams:   0, words:     0
-		worklib.tb_full_adder:sv <0x76bcec3d>
-			streams:   5, words: 11762
+		worklib.mux_2x1_tb:sv <0x1874d8bf>
+			streams:   5, words:  6195
 	Building instance specific data structures.
 	Loading native compiled code:     .................... Done
 	Design hierarchy summary:
 		                 Instances  Unique
 		Modules:                 2       2
 		Registers:               3       3
-		Scalar wires:            5       -
+		Scalar wires:            1       -
+		Vectored wires:          3       -
 		Initial blocks:          1       1
-		Cont. assignments:       0       2
+		Cont. assignments:       1       1
 		Pseudo assignments:      3       -
 		Simulation timescale:  1ps
-	Writing initial simulation snapshot: worklib.tb_full_adder:sv
-Loading snapshot worklib.tb_full_adder:sv .................... Done
+	Writing initial simulation snapshot: worklib.mux_2x1_tb:sv
+Loading snapshot worklib.mux_2x1_tb:sv .................... Done
 xcelium> source /opt/cadence/installs/XCELIUM2509/tools/xcelium/files/xmsimrc
 xcelium> run
-Time	A B Cin | Sum Cout
---------------------------
-0	0 0  0  |  0    0
-10000	0 0  1  |  1    0
-20000	0 1  0  |  1    0
-30000	0 1  1  |  0    1
-40000	1 0  0  |  1    0
-50000	1 0  1  |  0    1
-60000	1 1  0  |  0    1
-70000	1 1  1  |  1    1
-Simulation complete via $finish(1) at time 80 NS + 0
-./tb/lab1-1tb.sv:33         $finish;
+Time=0 SEL=0 IN0=aa IN1=55 OUT=aa
+Time=10000 SEL=1 IN0=aa IN1=55 OUT=55
+Time=20000 SEL=1 IN0=0f IN1=f0 OUT=f0
+Time=30000 SEL=0 IN0=0f IN1=f0 OUT=0f
+Simulation complete via $finish(1) at time 40 NS + 0
+./tb/lab1-3tb.sv:37         $finish;
 xcelium> exit
-TOOL:	xrun(64)	25.09-s008: Exiting on Jul 16, 2026 at 07:27:07 UTC  (total: 00:00:01)
+TOOL:	xrun(64)	25.09-s008: Exiting on Jul 16, 2026 at 07:45:20 UTC  (total: 00:00:00)

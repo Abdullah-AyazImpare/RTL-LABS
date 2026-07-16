@@ -8,9 +8,11 @@
 -INCDIR
 design
 design/lab1-1.v
+design/lab1-3.v
 -INCDIR
 tb
 tb/lab1-1tb.sv
+tb/lab1-3tb.sv
 -CDSLIB
 ./xcelium.d/run.lnx8664.25.09.d/cdsrun.lib
 -HDLVAR
@@ -21,3 +23,4 @@ tb/lab1-1tb.sv
 -XLLIBSTORE
 ./xcelium.d/run.lnx8664.25.09.d/xllibs
 -ALLOWUNBOUND
+-hastop

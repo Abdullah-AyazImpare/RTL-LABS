@@ -5,4 +5,4 @@ define SNAPSHOT worklib.tb_full_adder:sv
 DEFINE RUNMODEDEFAULT 1
 DEFINE LIB_MAP ( + => worklib )
 define ELAB_SNAPSHOT
-define SNAPSHOT worklib.tb_full_adder:sv
+define SNAPSHOT worklib.mux_2x1_tb:sv

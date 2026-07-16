@@ -1,8 +1,8 @@
 
 
 +incdir+design
-design/lab1-1.v
+design/lab1-3.v
 
 +incdir+tb
 
-tb/lab1-1tb.sv
+tb/lab1-3tb.sv

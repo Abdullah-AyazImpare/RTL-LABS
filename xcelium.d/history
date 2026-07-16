@@ -4,3 +4,11 @@
 
 s1::(16Jul2026:05:55:18):( xrun -f file.f )&&(./xcelium.d/env.d/env.history.16Jul2026_05_55_18)
 s2::(16Jul2026:07:27:06):( xrun -f file.f )&&(./xcelium.d/env.d/env.history.16Jul2026_07_27_06)
+s3::(16Jul2026:07:37:52):( xrun -f file.f -top lab1-3tb )&&(./xcelium.d/env.d/env.history.16Jul2026_07_37_52)
+s4::(16Jul2026:07:39:20):( xrun -f file.f -top lab1-3tb )&&(./xcelium.d/env.d/env.history.16Jul2026_07_39_20)
+s5::(16Jul2026:07:40:16):( xrun -f file.f -top lab1-3tb )&&(./xcelium.d/env.d/env.history.16Jul2026_07_40_16)
+s6::(16Jul2026:07:41:58):( xrun -f file.f )&&(./xcelium.d/env.d/env.history.16Jul2026_07_41_58)
+s7::(16Jul2026:07:42:32):( xrun -f file.f )&&(./xcelium.d/env.d/env.history.16Jul2026_07_42_32)
+s8::(16Jul2026:07:44:07):( xrun -f file.f )&&(./xcelium.d/env.d/env.history.16Jul2026_07_44_07)
+s9::(16Jul2026:07:44:56):( xrun -f file.f -top lab1-3tb )&&(./xcelium.d/env.d/env.history.16Jul2026_07_44_56)
+s10::(16Jul2026:07:45:20):( xrun -f file.f -top mux_2x1_tb )&&(./xcelium.d/env.d/env.history.16Jul2026_07_45_20)

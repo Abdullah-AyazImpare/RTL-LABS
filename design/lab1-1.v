@@ -1,4 +1,4 @@
-// Description: 1-bit Full Adder
+
 `timescale 1ns/1ps
 module full_adder (
     input  A,
