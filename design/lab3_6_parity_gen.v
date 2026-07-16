@@ -1,5 +1,5 @@
 // Lab 3-6: Create parity generator for 32-bit data
-
+`timescale 1ns/1ps
 
 module parity_gen (clk, din, dout);
     input  clk;

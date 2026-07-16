@@ -1,5 +1,5 @@
 // LAB 4-8: FIFO
-
+`timescale 1ns/1ps
 
 module fifo (d_in, in_valid, d_out, d_out_req, clk, full, empty, reset);
     input  [7:0] d_in;

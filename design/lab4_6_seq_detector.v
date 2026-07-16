@@ -1,5 +1,5 @@
 // Lab 4-6: Sequence Detector
-
+`timescale 1ns/1ps
 
 module seq_detect (in_wire, out, clk, reset);
     input  in_wire, clk, reset;

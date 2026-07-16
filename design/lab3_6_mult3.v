@@ -1,7 +1,7 @@
 // Lab 3-6: Create a multiplier which multiplies a number by three
 // using synthesizable RTL and no '*' operator.
 // x*3 = (x << 1) + x
-
+`timescale 1ns/1ps
 module mult3 (mult_in, en, mult_out);
     input  en;
     input  [5:0] mult_in;

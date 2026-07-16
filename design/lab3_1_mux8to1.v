@@ -1,6 +1,6 @@
 // Lab 3-1: Design an 8-to-1 mux using a case statement
 // Eight 5-bit inputs, 3-bit select, one 5-bit output
-
+`timescale 1ns/1ps
 module mux8to1 (a0, a1, a2, a3, a4, a5, a6, a7, sel, dout);
     input  [4:0] a0, a1, a2, a3, a4, a5, a6, a7;
     input  [2:0] sel;

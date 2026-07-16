@@ -1,4 +1,4 @@
-
+`timescale 1ns/1ps
 module dec3t08  (d_in, en, d0, d1, d2, d3, d4, d5, d6, d7);
     input  [2:0] d_in;
     input  en;

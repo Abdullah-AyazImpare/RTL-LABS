@@ -1,5 +1,5 @@
 // Lab 4-2: 8-bit Updown Counter
-
+`timescale 1ns/1ps
 module counter (reset, clock, up_down, count);
     input  reset, clock, up_down;
     output reg [7:0] count;

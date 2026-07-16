@@ -1,7 +1,7 @@
 // Lab 4-1: Flop with synchronous set/clear functionality
 //Design an 8-bit counter
 
-
+`timescale 1ns/1ps
 module counter8_set_clear (clk, clear, set, en, count);
     input  clk, clear, set, en;
     output reg [7:0] count;

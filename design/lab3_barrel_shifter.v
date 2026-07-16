@@ -1,3 +1,4 @@
+`timescale 1ns/1ps
 module barrel_org (S, A_P, B_P);
     input  [1:0] S;
     input  [3:0] A_P;

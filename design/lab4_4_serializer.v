@@ -1,5 +1,5 @@
 // Lab 4-4: Serial 8-bit to 1-bit
-
+`timescale 1ns/1ps
 module serial (bit_out, byte_in, clk, reset);
     output reg bit_out;
     input  [7:0] byte_in;

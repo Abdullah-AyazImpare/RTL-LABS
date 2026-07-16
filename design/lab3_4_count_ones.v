@@ -1,4 +1,6 @@
+
 // Lab 3-4: Count ones in an 8-bit vector
+`timescale 1ns/1ps
 module count_ones (VAL, RESET, CLK, Num, pos);
     input  [7:0] VAL;
     input  RESET, CLK;

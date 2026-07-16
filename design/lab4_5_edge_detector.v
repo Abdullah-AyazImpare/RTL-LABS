@@ -1,7 +1,7 @@
 // Lab 4-5: Edge Detector
 // Counts positive edges of insig when p_edge is asserted, negative edges
 // when n_edge is asserted, and both when both are asserted.
-
+`timescale 1ns/1ps
 module edge_detect (insig, p_edge, n_edge, clk, reset, count);
     input  insig, p_edge, n_edge, clk, reset;
     output reg [7:0] count;

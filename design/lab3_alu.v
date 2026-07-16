@@ -1,5 +1,5 @@
 // Lab 3-1: Design an ALU
-
+`timescale 1ns/1ps
 module alu (Opcode, Reset, clock, A, B, Dout, Zero, Overflow, CarryOut);
     input  [3:0]  Opcode;
     input         Reset, clock;

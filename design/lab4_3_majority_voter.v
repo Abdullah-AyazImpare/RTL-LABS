@@ -1,5 +1,5 @@
 // Lab 4-3: Serial Input Majority Voter
-
+`timescale 1ns/1ps
 
 module majority_counter (in, clk, out);
     input  in, clk;
